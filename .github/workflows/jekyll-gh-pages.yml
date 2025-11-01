@@ -58,16 +58,17 @@ jobs:
       - name: Build
         uses: actions/jekyll-build-pages@v1
 
-      - name: Change permissions of _site directory
-        run: sudo chmod -R 777 _site
-
-      - name: Copy .well-known folder
-        run: cp -r .well-known _site/
+      - name: Prepare site directory
+        run: |
+          mkdir -p _site
+          sudo chmod -R 777 _site
+          cp -r .well-known _site/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
           path: _site
+          include-hidden-files: true
 
   # Deployment job
   deploy:
