@@ -1,6 +1,5 @@
 version: STSv1
 mode: testing
-mx: mx.zoho.com
-mx: mx2.zoho.com
-mx: mx3.zoho.com
+mx: mx1.simplelogin.co
+mx: mx2.simplelogin.co
 max_age: 1209600

@@ -6,10 +6,6 @@
 
 
 ### Custom Ignores ###
-python-venv/
-server.mjs
-crypto.mjs
-tests.mjs
 
 
 ### Node ###

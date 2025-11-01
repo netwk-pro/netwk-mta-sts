@@ -1,0 +1,29 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "netwk",
+    "simplelogin"
+  ],
+  "ignorePaths": [
+    ".gitignore",
+    ".gitattributes",
+    "static/sitemap.xml",
+    "static/robots.txt",
+    "src/lib/styles/**",
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/coverage/**",
+    "**/playwright-report/**"
+  ],
+  "ignoreWords": [],
+  "enableFiletypes": [
+    "javascript",
+    "typescript",
+    "json",
+    "markdown",
+    "html",
+    "svelte"
+  ],
+  "useGitignore": true
+}
