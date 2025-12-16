@@ -1,7 +1,0 @@
-# Minimal configuration for Jekyll + GitHub Pages
-title: MTA-STS Policy Host
-description: Policy file hosting for mta-sts.netwk.pro
-
-# Ensure .well-known directory is included in the site build
-include:
-  - .well-known

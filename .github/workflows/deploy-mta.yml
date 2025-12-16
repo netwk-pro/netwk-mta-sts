@@ -1,3 +1,9 @@
+# .github/workflows/deploy-mta.yml
+#
+# Copyright © 2025 Network Pro Strategies
+# SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
+# This file is part of Network Engineering Pro.
+
 name: Deploy MTA-STS policy
 
 on:
@@ -20,7 +26,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -35,7 +41,7 @@ jobs:
         run: tar -cvf artifact.tar -C _site .
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: github-pages
           path: artifact.tar
